@@ -60,7 +60,8 @@ app.delete('/projects/:id', (req, res, next) => {
 
     const project = { id, title, owner }
 
-    projects.splice(projectIndex, 1) // <- essa linha
+    projects.splice(projectIndex, 1)
+    console.log(projects[projectIndex]);
 
     return res.json(project)
 })
