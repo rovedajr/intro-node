@@ -31,7 +31,6 @@ app.put('/projects/:id', (req, res, next) => {
 })
 
 app.delete('/projects/:id', (req, res, next) => {
-<<<<<<< af231629914c42dcdc417e714f5b674349969c6d
 
 
     const { id } = req.params
@@ -49,11 +48,8 @@ app.delete('/projects/:id', (req, res, next) => {
     console.log(projects[projectIndex]);
 
     return res.json(project)
-=======
-    return res.json(['Projeto 2', 'Projeto 3'])
->>>>>>> Revert "Add method to delete endpoint"
 })
 
 app.listen(porta, () => {
-    console.log(`🚀 Fuckery began on port ${porta} 🚀`)
+    console.log(`🚀 Fun being held on port ${porta} 🚀`)
 });
