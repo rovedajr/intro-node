@@ -63,7 +63,7 @@ app.delete('/projects/:id', (req, res, next) => {
     projects.splice(projectIndex, 1)
     console.log(projects[projectIndex]);
 
-    return res.json(project)
+    return res.json(projects)
 })
 
 app.listen(porta, () => {
