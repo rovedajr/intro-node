@@ -1,10 +1,13 @@
 const express = require('express')
+const cors = require("cors");
 const { uuid } = require('uuidv4')
 const { response } = require('express')
 const app = express()
 const porta = 3333
 const projects = []
 
+
+app.use(cors());
 app.use(express.json())
 
 app.get('/projects', (req, res) => {
